@@ -26,6 +26,7 @@ services:
     container_name: db
     image: postgres:14-alpine
     environment:
+#      TODO: remove and use secrets
       POSTGRES_USER: test_user
       POSTGRES_PASSWORD: test_password
       POSTGRES_DB: rock

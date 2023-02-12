@@ -1,0 +1,8 @@
+kafka:
+  server:
+    host: localhost
+    port: 9093
+  consumer:
+    auto-offset-reset: earliest
+  bootstrapServer: ${kafka.server.host}:${kafka.server.port}
+  groupId: books
