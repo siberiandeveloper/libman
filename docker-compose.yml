@@ -29,6 +29,6 @@ services:
 #      TODO: remove and use secrets
       POSTGRES_USER: test_user
       POSTGRES_PASSWORD: test_password
-      POSTGRES_DB: rock
+      POSTGRES_DB: books
     ports:
       - "54322:5432"

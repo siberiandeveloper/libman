@@ -1,3 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:54322/books
+    driver-class-name: org.postgresql.Driver
+#    TODO: remove and add via secrets
+    username: test_user
+    password: test_password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: none
 kafka:
   server:
     host: localhost
